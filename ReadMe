@@ -1,0 +1,18 @@
+Project Progress:
+
+Homescreen: Display albums screen: Everything should be functional. Add albums should work with zero or more existing albums. Removing albums should work, provided at least one album exists. Clicking on an album yields a context menu allowing removal or renaming an album. Renaming an album should work. Does not remove existing photos from its library.
+
+
+
+
+Album screen: This screen displays a grid of photos. Duplication is currently unrestricted. Clicking on the add photo button opens a navigator to the SD card to allow pulling a specified photo into the album. Clicking on an existing photo opens the context menu, allowing for a slideshow view, deletion, or moving the photo to another album (via text field). Deletion and moving photos operate as expected.
+	
+	*** Write persistence is currently malfunctioning. Writing works for all albums, but fails with the insertion of photos. We are currently exploring this issue and suspect it is a result of non-serializability of bitmap objects. ***
+	*** Tried to save the file, but due to time concern, we are not able to finish the saving persistence part.*** 
+	Search by tags implemented.
+	
+
+
+
+
+

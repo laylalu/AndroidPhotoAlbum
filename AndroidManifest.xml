@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cs213.project.photoAlbum"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="10" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/photo_album" >
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".PhotoAlbumActivity"
+            android:label="@string/photo_album" >
+           
+            
+            <!-- JPAK ADDED MATERIAL  -->
+            
+            <intent-filter>
+            	<action android:name="android.intent.action.SEARCH" />
+        	</intent-filter>
+        	<meta-data android:name="android.app.searchable"
+                   android:resource="@xml/searchable"/>
+            
+            <!-- END JPAK ADDED MATERIAL -->
+            
+                       
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="CreateAlbum"></activity>
+        <activity android:name="DisplayAlbum"></activity>
+        <activity android:name="SlideShow"></activity>
+    </application>
+
+</manifest>
